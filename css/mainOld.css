@@ -1,0 +1,344 @@
+/* Body */
+body {
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+    background-color:#000000;
+    color: #c3185d;
+    font-family: 'Kaisei Tokumin', serif;
+    height: 100vh;
+    /* Grid Layout */
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 40px 0px;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"; 
+}
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
+    /* Agregado para pisar boostrap */
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 3.5rem;
+}
+/*  Navbar */
+nav {
+    background-image: url(../multimedia/images/shutterstock_256772434-2.png);
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+nav div img {
+    margin: 10px;
+}
+nav li a {
+    color: #c3185d;
+    background-color: #000000;
+    padding: 10px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px #000000;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 31px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 50ms;
+}
+nav a:hover {
+    color: #f8bbd0;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Section home */
+
+/* La imagen es representativa*/
+
+#sectionHome   {
+    background-image: url('../multimedia/images/fotohome2.jpg');
+    height: 670px;
+    background-size: cover;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+}
+#sectionHome h1{
+    font-size: 160px;
+}
+#sectionHome h2 {
+    font-size: 80px;
+}
+.secondTitle {
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-text-stroke: 2px #8F1143;
+}
+
+/*  Section servicios */
+
+.titleServicios {
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    -webkit-text-stroke: 1.5px #8F1143;
+}
+.textServicios {
+    padding: 0px 30px;
+    font-style: italic;
+    font-size: 25px;
+    color: #f8bbd0;
+    font-weight: 300;
+    text-align: left;
+}
+
+.blockLeft {
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blockLeft img {
+    /* bordes */
+    border-radius: 100px 10px 100px 10px;
+    -moz-border-radius: 100px 10px 100px 10px;
+    -webkit-border-radius: 100px 10px 100px 10px;
+    border: 2px solid #000000;
+    /* sombras */
+    -webkit-box-shadow: 10px 10px 15px 0px #c3185db3;
+    -moz-box-shadow: 10px 10px 15px 0px #c3185db3;
+    box-shadow: 10px 10px 15px 0px #c3185db3;
+    /* animation */
+    animation-name: focus-in;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation-fill-mode: both;
+}
+.buttonLeft a {
+    transform: translate(35em, -50px);
+    font-style: italic;
+    font-size: 25px;
+    color: #c3185d;
+    font-weight: 700;
+    background-color: black;
+    border-style: dashed;
+    border-color: #c3185d; 
+}
+
+
+.blockRight {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.blockRight img {
+    /* bordes */
+    border-radius: 10px 100px 10px 100px ;
+    -moz-border-radius: 10px 100px 10px 100px;
+    -webkit-border-radius: 10px 100px 10px 100px;
+    border: 2px solid #000000;
+    /* sombras */
+    -webkit-box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
+    -moz-box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
+    box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
+    transform: translateX(-15px);
+    /* animation */
+    animation-name: focus-in;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation-fill-mode: both;
+}
+.buttonRight a {
+    transform: translate(2em, -20px);
+    font-style: italic;
+    font-size: 25px;
+    color: #c3185d;
+    font-weight: 700;
+    background-color: black;
+    border-style: dashed;
+    border-color: #c3185d;  
+}
+#sectionServicios a:hover{
+    background-color: #000000;
+    border-color: #f8bbd0;
+}
+
+/* Keyframes image */
+@keyframes focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+/* Section productos */
+
+#sectionProductos p {
+    color:#f8bbd0 ;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: left;
+}
+
+/* Section Galeria */
+.container {
+    width: 50%;
+}
+#sectionGaleria h2 {
+    margin: 30px 0px 60px 0px;
+}
+
+/* Section Contacto */
+#sectionContacto table {
+    border: #000000 3px solid;
+    padding: 10px;
+    font-size: 10 px;
+    font-weight: 400;
+}
+#sectionContacto div button {
+    background-color: #000000;
+    border-color: #c3185d;
+    color: #c3185d;
+}
+#sectionContacto button:hover {
+    background-color: #000000;
+    border-color: #f8bbd0;
+    color: #f8bbd0;
+}
+
+/* Footer */
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #c3185d;
+    font-weight: 400;
+    font-size: 1.5em;
+    display: flex;
+}
+
+footer ul {
+    list-style: none;
+    text-align: right;
+    display: flex;
+}
+footer li { 
+    padding: 0px 30px;
+}
+
+/* Mediaqueries */
+
+/* Mobile */
+@media screen and (max-width: 450px) {
+    body {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    }
+
+    /* Navbar */
+
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        display: block;
+        text-align: left;
+        padding: 0px;
+    }
+
+    /* Section Home */
+
+    #sectionHome {
+        text-align: left;
+        background-position: left;
+        max-width: 425px;
+    }
+    #sectionHome h1{
+        font-size: 70px;
+        text-align: left;
+    }
+    #sectionHome h2 {
+        font-size: 50px;
+        text-align: left;
+    }
+    .secondTitle {
+        font-size: 50px;
+        text-align: left;
+        text-transform: capitalize;
+    }
+
+    /* Section Servicios */
+
+    .titleServicios {
+        font-size: 35px;
+        text-align: left;
+    }
+    .textServicios {
+        padding: 0px 30px;
+        font-size: 25px;
+        text-align: left;
+    }
+    #sectionServicios div div div {
+        margin: 0px 15px;
+        display: block;
+    }
+    footer {
+        display:block
+    }
+    footer li {
+        padding: 0px 15px
+    }
+    /* Section contacto */
+    #sectionContacto div table{
+        text-align: left;
+    }
+    #sectionContacto iframe {
+        width: 275px;
+        height: 225px;
+    }
+}
+/* Tablet */
+@media screen and (max-width: 800px) {
+    /* Navbar */
+    nav ul {
+        display: block;
+        text-align: left;
+        padding: 0px;
+    }
+}
