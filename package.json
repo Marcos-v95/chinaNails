@@ -1,7 +1,7 @@
 {
   "name": "chinanails",
   "version": "1.0.0",
-  "description": "Mi primera maqueta web :)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
