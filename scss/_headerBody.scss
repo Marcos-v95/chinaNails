@@ -1,0 +1,81 @@
+
+// Estilos de body
+body {
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+    background-color: $color-third;
+    color: $color-first;
+    font-family: $font-secondary;
+    height: 100vh;
+
+    /* Grid Layout */
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 40px 0px;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
+    /* Fin grid layout */ 
+}
+
+/* Agregado para pisar boostrap */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 3.5rem;
+}
+// Estilos de header
+
+/* Navbar */
+nav {
+    background-image: url(../multimedia/images/header.png);
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    a {
+        img {
+            margin: 10px;
+        }
+    }
+    #navList {
+        display: flex;
+        flex-flow: row nowrap;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;  
+            li {
+                a {
+                    color: $color-first;
+                    padding: 10px;
+                    letter-spacing: 1px;
+                    -webkit-text-stroke: 1px $color-third;
+                    text-decoration: none;
+                    font-family: $font-primary;
+                    font-size: 31px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    transition: all 50ms;
+                }
+                :hover {
+                        color:$color-second;
+                    }
+            }
+        }
+    }  
+}
+
+
+

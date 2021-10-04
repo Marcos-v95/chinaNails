@@ -1,0 +1,115 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 2px;
+  background-color: #000000;
+  color: #c3185d;
+  font-family: "Kaisei Tokumin", serif;
+  height: 100vh;
+  /* Grid Layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px 0px;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  /* Fin grid layout */ }
+  body header {
+    grid-area: header; }
+  body main {
+    grid-area: main; }
+  body footer {
+    grid-area: footer; }
+
+/* Agregado para pisar boostrap */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 3.5rem; }
+
+/* Navbar */
+nav {
+  background-image: url(../multimedia/images/header.png);
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around; }
+  nav a img {
+    margin: 10px; }
+  nav #navList {
+    display: flex;
+    flex-flow: row nowrap; }
+    nav #navList ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      nav #navList ul li a {
+        color: #c3185d;
+        padding: 10px;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 1px #000000;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 31px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 50ms; }
+      nav #navList ul li :hover {
+        color: #f8bbd0; }
+
+/* Section home */
+#sectionHome {
+  background-image: url("../multimedia/images/fotohome2.jpg");
+  height: 670px;
+  background-size: cover;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize; }
+  #sectionHome h1 {
+    font-size: 160px; }
+  #sectionHome h2 {
+    font-size: 80px; }
+
+.secondTitle {
+  margin-top: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-text-stroke: 2px #8F1143; }
+
+/* Section Galeria */
+.container {
+  width: 50%; }
+
+#sectionGaleria h2 {
+  margin: 30px 0px 60px 0px; }
+
+/* Section Contacto */
+#sectionContacto table {
+  border: #000000 3px solid;
+  padding: 10px;
+  font-size: 10 px;
+  font-weight: 400; }
+
+#sectionContacto div button {
+  background-color: #000000;
+  border-color: #c3185d;
+  color: #c3185d; }
+  #sectionContacto div button :hover {
+    background-color: #000000;
+    border-color: #f8bbd0;
+    color: #f8bbd0; }
+
+footer {
+  color: #c3185d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  display: flex;
+  -webkit-text-stroke: 1.5px #8F1143; }
+  footer ul {
+    list-style: none;
+    text-align: right;
+    display: flex; }
+    footer ul li {
+      padding: 0px 30px; }
