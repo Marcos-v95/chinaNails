@@ -1,22 +1,19 @@
 /* Section Contacto */
 #sectionContacto {
     table {
-        border: #000000 3px solid;
         padding: 10px;
-        font-size: 10 px;
         font-weight: 400;
     }
-    div {
-        button {
-            background-color: #000000;
-            border-color: #c3185d;
-            color: #c3185d; 
-            :hover {
-                background-color: #000000;
-                border-color: #f8bbd0;
-                color: #f8bbd0;
-            }    
-        }
-        
+    .btn-primary {
+        background-color: $color-third;
+        border-color: $color-first;
+        color: $color-first; 
+        :hover {
+            background-color: $color-third;
+            border-color: $color-second;
+            color: $color-second;
+        }    
     }
+        
+    
 }

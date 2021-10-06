@@ -3,7 +3,7 @@ body {
   padding: 0px;
   letter-spacing: 2px;
   background-color: #000000;
-  color: #c3185d;
+  color: #FF3888;
   font-family: "Kaisei Tokumin", serif;
   height: 100vh;
   /* Grid Layout */
@@ -42,14 +42,15 @@ nav {
       flex-direction: row;
       align-items: center; }
       nav #navList ul li a {
-        color: #c3185d;
+        color: #FF3888;
+        text-shadow: 2px 2px #000000;
+        -webkit-text-stroke: 1.5px #000000;
         padding: 10px;
         letter-spacing: 1px;
-        -webkit-text-stroke: 1px #000000;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-size: 31px;
-        font-weight: 500;
+        font-weight: 600;
         text-transform: uppercase;
         transition: all 50ms; }
       nav #navList ul li :hover {
@@ -70,7 +71,7 @@ nav {
 
 .secondTitle {
   margin-top: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 70px;
   text-align: center;
@@ -86,30 +87,30 @@ nav {
 
 /* Section Contacto */
 #sectionContacto table {
-  border: #000000 3px solid;
   padding: 10px;
-  font-size: 10 px;
   font-weight: 400; }
 
-#sectionContacto div button {
+#sectionContacto .btn-primary {
   background-color: #000000;
-  border-color: #c3185d;
-  color: #c3185d; }
-  #sectionContacto div button :hover {
+  border-color: #FF3888;
+  color: #FF3888; }
+  #sectionContacto .btn-primary :hover {
     background-color: #000000;
     border-color: #f8bbd0;
     color: #f8bbd0; }
 
 footer {
-  color: #c3185d;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1.5em;
   display: flex;
-  -webkit-text-stroke: 1.5px #8F1143; }
+  flex-flow: row nowrap; }
+  footer p {
+    color: #FF3888;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em; }
   footer ul {
     list-style: none;
     text-align: right;
-    display: flex; }
+    display: flex;
+    flex-flow: row nowrap; }
     footer ul li {
       padding: 0px 30px; }

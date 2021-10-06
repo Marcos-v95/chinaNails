@@ -1,15 +1,18 @@
-
+$font-size:0.5em;
 footer {
-    color:$color-first;
-    font-family: $font-primary;
-    font-weight: 400;
-    font-size: 1.5em;
     display: flex;
-    -webkit-text-stroke: 1.5px $color-shadow;
+    flex-flow: row nowrap;
+    p{
+        color:$color-first;
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: $font-size+1em;
+    }
     ul {
         list-style: none;
         text-align: right;
         display: flex;
+        flex-flow: row nowrap;
         li {
             padding: 0px 30px;
         }

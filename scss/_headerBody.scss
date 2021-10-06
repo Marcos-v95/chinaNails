@@ -59,13 +59,14 @@ nav {
             li {
                 a {
                     color: $color-first;
+                    text-shadow: 2px 2px $color-third;
+                    -webkit-text-stroke: 1.5px $color-third;
                     padding: 10px;
                     letter-spacing: 1px;
-                    -webkit-text-stroke: 1px $color-third;
                     text-decoration: none;
                     font-family: $font-primary;
                     font-size: 31px;
-                    font-weight: 500;
+                    font-weight: 600;
                     text-transform: uppercase;
                     transition: all 50ms;
                 }
