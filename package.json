@@ -1,7 +1,7 @@
 {
   "name": "chinanails",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta es una web para un emprendimiento de belleza de manos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
