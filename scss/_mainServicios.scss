@@ -1,0 +1,74 @@
+#sectionServicios {
+    
+    .titleServicios {
+        font-size: 35px;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-align: center;
+        -webkit-text-stroke: 1.5px $color-shadow;
+    }
+    .textServicios {
+        padding: 0px 30px;
+        font-style: italic;
+        font-size: 25px;
+        color: $color-second;
+        font-weight: 300;
+        text-align: left;
+    }
+    .blockLeft {
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+            /*bordes*/
+            border-radius: 100px 10px 100px 10px;
+            -moz-border-radius: 100px 10px 100px 10px;
+            -webkit-border-radius: 100px 10px 100px 10px;
+            border: 2px solid $color-shadow;
+            /*sombras*/
+            -webkit-box-shadow: 10px 10px 15px 0px #c3185db3;
+            -moz-box-shadow: 10px 10px 15px 0px #c3185db3;
+            box-shadow: 10px 10px 15px 0px #c3185db3;
+        }
+    }
+    .buttonLeft {
+        a{
+            transform: translate(35em, -50px);
+            @include blockButtons();
+            &:hover {
+                background-color: $color-third;
+                border-color: $color-second;
+                color:$color-second ;
+            }
+        }
+    }
+    .blockRight {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        img {
+            /*bordes*/ 
+            border-radius: 10px 100px 10px 100px ;
+            -moz-border-radius: 10px 100px 10px 100px;
+            -webkit-border-radius: 10px 100px 10px 100px;
+            border: 2px solid $color-third;
+            /*sombras*/
+            -webkit-box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
+            -moz-box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
+            box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
+            transform: translateX(-15px); 
+        }
+    }
+    .buttonRight {
+        a {
+            transform: translate(2em, -20px);
+            @include blockButtons();
+            &:hover {
+                background-color: $color-third;
+                border-color: $color-second;
+                color:$color-second ;
+            }
+        }
+    }
+}
