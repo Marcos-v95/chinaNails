@@ -1,3 +1,4 @@
+/* Section Servicios */
 #sectionServicios {
     
     .titleServicios {
@@ -30,6 +31,11 @@
             -webkit-box-shadow: 10px 10px 15px 0px #c3185db3;
             -moz-box-shadow: 10px 10px 15px 0px #c3185db3;
             box-shadow: 10px 10px 15px 0px #c3185db3;
+            /* animation */
+            animation-name: focus-in;
+            animation-duration: 1s;
+            animation-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530);
+            animation-fill-mode: both;
         }
     }
     .buttonLeft {
@@ -58,7 +64,13 @@
             -moz-box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
             box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
             transform: translateX(-15px); 
+            /* animation */
+            animation-name: focus-in;
+            animation-duration: 1s;
+            animation-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530);
+            animation-fill-mode: both;
         }
+
     }
     .buttonRight {
         a {
@@ -72,3 +84,16 @@
         }
     }
 }
+/* Keyframes image */
+@keyframes focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }

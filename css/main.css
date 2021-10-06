@@ -1,3 +1,4 @@
+/* Body */
 body {
   margin: 0px;
   padding: 0px;
@@ -78,6 +79,7 @@ nav {
   text-transform: capitalize;
   -webkit-text-stroke: 2px #8F1143; }
 
+/* Section Servicios */
 #sectionServicios .titleServicios {
   font-size: 35px;
   font-weight: 500;
@@ -107,7 +109,12 @@ nav {
     /*sombras*/
     -webkit-box-shadow: 10px 10px 15px 0px #c3185db3;
     -moz-box-shadow: 10px 10px 15px 0px #c3185db3;
-    box-shadow: 10px 10px 15px 0px #c3185db3; }
+    box-shadow: 10px 10px 15px 0px #c3185db3;
+    /* animation */
+    animation-name: focus-in;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    animation-fill-mode: both; }
 
 #sectionServicios .buttonLeft a {
   transform: translate(35em, -50px);
@@ -137,7 +144,12 @@ nav {
     -webkit-box-shadow: -10px 10px 15px 0px rgba(195, 24, 93, 0.7);
     -moz-box-shadow: -10px 10px 15px 0px rgba(195, 24, 93, 0.7);
     box-shadow: -10px 10px 15px 0px rgba(195, 24, 93, 0.7);
-    transform: translateX(-15px); }
+    transform: translateX(-15px);
+    /* animation */
+    animation-name: focus-in;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    animation-fill-mode: both; }
 
 #sectionServicios .buttonRight a {
   transform: translate(2em, -20px);
@@ -153,6 +165,18 @@ nav {
     border-color: #f8bbd0;
     color: #f8bbd0; }
 
+/* Keyframes image */
+@keyframes focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+/* Section Productos */
 .sectionProductos {
   display: flex;
   flex-flow: row wrap;
@@ -191,6 +215,7 @@ nav {
     border-color: #f8bbd0;
     color: #f8bbd0; }
 
+/* Footer */
 footer {
   display: flex;
   flex-flow: row nowrap; }
@@ -206,3 +231,94 @@ footer {
     flex-flow: row nowrap; }
     footer ul li {
       padding: 0px 30px; }
+
+/* Mobile */
+@media screen and (max-width: 450px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header" "main" "footer"; }
+  /* Navbar */
+  nav {
+    flex-direction: column; }
+    nav #navList ul {
+      display: block;
+      text-align: left;
+      padding: 0px; }
+  /* Section Home */
+  #sectionHome {
+    text-align: left;
+    background-position: left;
+    max-width: 425px; }
+    #sectionHome h1 {
+      font-size: 70px;
+      text-align: left; }
+    #sectionHome h2 {
+      font-size: 50px;
+      text-align: left; }
+    #sectionHome .secondTitle {
+      font-size: 50px;
+      text-align: left;
+      text-transform: capitalize; }
+  /* Section Servicios */
+  #sectionServicios .secondTitle {
+    font-size: 40px;
+    text-align: left;
+    text-transform: capitalize; }
+  #sectionServicios .titleServicios {
+    font-size: 25px;
+    text-align: left; }
+  #sectionServicios .textServicios {
+    padding: 0px;
+    font-size: 20px;
+    text-align: left; }
+  #sectionServicios .blockLeft {
+    margin: 0px 15px;
+    display: block; }
+  #sectionServicios .buttonLeft {
+    padding-bottom: 20px; }
+    #sectionServicios .buttonLeft a {
+      margin: 0px 15px;
+      display: block;
+      transform: none; }
+  #sectionServicios .blockRight {
+    margin: 0px 15px;
+    display: block; }
+  #sectionServicios .buttonRight {
+    padding-bottom: 20px; }
+    #sectionServicios .buttonRight a {
+      margin: 0px 15px;
+      display: block;
+      transform: none; }
+  footer {
+    display: block; }
+    footer li {
+      padding: 0px 15px; }
+  /* Section contacto */
+  #sectionContacto table {
+    text-align: left; }
+  #sectionContacto iframe {
+    width: 275px;
+    height: 225px; } }
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+  /* Navbar */
+  nav #navList ul {
+    display: block;
+    text-align: left;
+    padding: 0px; }
+  #sectionServicios .buttonLeft {
+    padding-bottom: 20px; }
+    #sectionServicios .buttonLeft a {
+      margin: 0px 15px;
+      display: block;
+      transform: none; }
+  #sectionServicios .buttonRight {
+    padding-bottom: 20px; }
+    #sectionServicios .buttonRight a {
+      margin: 0px 15px;
+      display: block;
+      transform: none; } }

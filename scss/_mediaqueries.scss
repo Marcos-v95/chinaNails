@@ -1,0 +1,143 @@
+/* Mobile */
+@media screen and (max-width: 450px) {
+    body {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    }
+
+    /* Navbar */
+
+    nav {
+        flex-direction: column;
+        #navList ul {
+            display: block;
+            text-align: left;
+            padding: 0px;
+        }
+    }
+
+    /* Section Home */
+
+    #sectionHome {
+        text-align: left;
+        background-position: left;
+        max-width: 425px;
+        h1{
+            font-size: 70px;
+            text-align: left;
+        }
+        h2 {
+            font-size: 50px;
+            text-align: left;
+        }
+        .secondTitle {
+            font-size: 50px;
+            text-align: left;
+            text-transform: capitalize;
+        }
+    } 
+    
+
+    /* Section Servicios */
+    
+    #sectionServicios {
+        .secondTitle {
+            font-size: 40px;
+            text-align: left;
+            text-transform: capitalize;
+        }
+        .titleServicios {
+            font-size: 25px;
+            text-align: left;
+        }
+        .textServicios {
+            padding: 0px;
+            font-size: 20px;
+            text-align:left;
+        }
+        .blockLeft {
+            margin: 0px 15px;
+            display: block;
+        }
+        .buttonLeft {
+            padding-bottom: 20px;
+            a{
+                margin: 0px 15px;
+                display: block;
+                transform: none;
+                
+            }
+            
+        }
+        .blockRight {
+            margin: 0px 15px;
+            display: block;
+        }
+        .buttonRight {
+            padding-bottom: 20px;
+            a{
+                margin: 0px 15px;
+                display: block;
+                transform: none;
+                
+            }
+        }
+        
+    }
+    footer {
+        display:block;
+        li {
+            padding: 0px 15px
+        }
+    }
+
+    /* Section contacto */
+
+    #sectionContacto{
+        table{
+            text-align: left;
+        }
+        iframe {
+            width: 275px;
+            height: 225px;
+        }
+
+    } 
+}
+/* Tablet */
+@media screen and (max-width: 800px) {
+    /* Navbar */
+    nav {
+        #navList ul {
+            display: block;
+            text-align: left;
+            padding: 0px;
+        }
+    }
+    #sectionServicios{
+        .buttonLeft {
+            padding-bottom: 20px;
+            a{
+                margin: 0px 15px;
+                display: block;
+                transform: none;
+                
+            }
+        }
+        .buttonRight {
+            padding-bottom: 20px;
+            a{
+                margin: 0px 15px;
+                display: block;
+                transform: none;
+                
+            }
+        }
+    }
+}
