@@ -1,89 +1,120 @@
 /* Section Servicios */
-#sectionServicios {
-    
-    .titleServicios {
-        font-size: 35px;
-        font-weight: 500;
-        text-transform: capitalize;
-        text-align: center;
-        -webkit-text-stroke: 1.5px $color-shadow;
+#sectionServicios1 {
+    @include sectionServicios ($color-three)
+}
+.blockLeft {
+    @extend %styleBlock;
+    flex-flow: row nowrap;
+    img {
+        height: 550px;
+        width: 380px;
+        /*bordes*/
+        border-radius: 100px 10px 100px 10px;
+        -moz-border-radius: 100px 10px 100px 10px;
+        -webkit-border-radius: 100px 10px 100px 10px;
+        border: 2px solid $color-three;
+        /*sombras*/
+        -webkit-box-shadow: 10px 10px 15px 0px $color-five;
+        -moz-box-shadow: 10px 10px 15px 0px $color-five;
+        box-shadow: 10px 10px 15px 0px $color-five;
+        /* animation */
+        animation-name: focus-in;
+        animation-duration: 1s;
+        animation-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530);
+        animation-fill-mode: both;
     }
-    .textServicios {
-        padding: 0px 30px;
-        font-style: italic;
-        font-size: 25px;
-        color: $color-second;
-        font-weight: 300;
-        text-align: left;
-    }
-    .blockLeft {
-        margin: 0px 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        img {
-            /*bordes*/
-            border-radius: 100px 10px 100px 10px;
-            -moz-border-radius: 100px 10px 100px 10px;
-            -webkit-border-radius: 100px 10px 100px 10px;
-            border: 2px solid $color-shadow;
-            /*sombras*/
-            -webkit-box-shadow: 10px 10px 15px 0px #c3185db3;
-            -moz-box-shadow: 10px 10px 15px 0px #c3185db3;
-            box-shadow: 10px 10px 15px 0px #c3185db3;
-            /* animation */
-            animation-name: focus-in;
-            animation-duration: 1s;
-            animation-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530);
-            animation-fill-mode: both;
+    div{
+        padding-left: 85px;
+        h2 {
+            @extend %titleServicios;
+            color:$color-third;
+            text-shadow: 4px 7px 3px black;
         }
-    }
-    .buttonLeft {
-        a{
-            transform: translate(35em, -50px);
-            @include blockButtons();
-            &:hover {
-                background-color: $color-third;
-                border-color: $color-second;
-                color:$color-second ;
+        p {
+            padding-top: 40px;
+            font-family: $font-secondary;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: italic;
+            line-height: 2;
+            color:$color-third;
+        }
+        .buttonLeft {
+            transform: translate(20em, 2em);
+            a{
+                @extend %blockButtons;
+                background-color: $color-six;
+                color: $color-one;
+                border-color: $color-one;
+                &:hover {
+                    background-color: $color-five;
+                    border-color: $color-four;
+                    color: $color-four ;
+                }
             }
         }
     }
+}
+#sectionServicios2 {
+    @include sectionServicios($color-one);
     .blockRight {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        @extend %styleBlock;
+        flex-flow: row-reverse nowrap;
         img {
+            height: 550px;
+            width: 380px;
             /*bordes*/ 
             border-radius: 10px 100px 10px 100px ;
             -moz-border-radius: 10px 100px 10px 100px;
             -webkit-border-radius: 10px 100px 10px 100px;
             border: 2px solid $color-third;
             /*sombras*/
-            -webkit-box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
-            -moz-box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
-            box-shadow: -10px 10px 15px 0px rgba(195,24,93,0.7);
+            -webkit-box-shadow: -10px 10px 15px 0px $color-five;
+            -moz-box-shadow: -10px 10px 15px 0px $color-five;
+            box-shadow: -10px 10px 15px 0px $color-five;
             transform: translateX(-15px); 
             /* animation */
-            animation-name: focus-in;
-            animation-duration: 1s;
-            animation-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530);
-            animation-fill-mode: both;
+            @extend %animationImgserv;
         }
+        div {
+            padding-right: 85px;
+            h2 {
+                @extend %titleServicios;
+                color:black;
+                text-shadow: 5px 5px 3.5px $color-three;
+            }
+            p{
+                padding-top: 40px;
+                font-family: $font-secondary;
+                font-size: 20px;
+                font-weight: 500;
+                font-style: italic;
+                line-height: 2;
+                color:black;
+                -webkit-text-stroke: 1px;
+            }
+            .buttonRight {
+                transform: translate(2em, 2em);
+                a {
+                    @extend %blockButtons;
+                    color:$color-five;
+                    background-color:$color-one;
+                    border-color: $color-three;
+                    &:hover {
+                        background-color: $color-five;
+                        border-color: $color-four;
+                        color:$color-four ;
+                    }
+                }
 
-    }
-    .buttonRight {
-        a {
-            transform: translate(2em, -20px);
-            @include blockButtons();
-            &:hover {
-                background-color: $color-third;
-                border-color: $color-second;
-                color:$color-second ;
             }
         }
     }
 }
+#sectionServicios3 {
+    @include sectionServicios($color-seven)
+}
+
 /* Keyframes image */
 @keyframes focus-in {
     0% {
@@ -96,4 +127,4 @@
               filter: blur(0px);
       opacity: 1;
     }
-  }
+}

@@ -1,18 +1,57 @@
 $font-primary:'Montserrat', sans-serif;
 $font-secondary:'Kaisei Tokumin', serif;
+$font-tertiary:'Dancing Script', cursive;
 $color-first:#FF3888;
 $color-second:#f8bbd0;
-$color-third:#000000;
+$color-third:#ffe5d4;
 $color-shadow:#8F1143;
+
+$color-one: #ffe5d4;
+$color-two:#f8bbd0;
+$color-three: #8F1143;
+$color-four:#FF3888;
+$color-five: #000000;
+$color-six: #00000057;
+$color-seven:#582a78;
 
 // Mix 
 // Page servicios
-@mixin blockButtons {
+
+@mixin sectionServicios ($backgroundcolor) {
+    height: 620px;
+    background-color: $backgroundcolor;
+    margin-bottom: 40px;
+}
+%blockButtons {
+    padding: 3px 8px;
+    font-family: 'Montserrat';
     font-style: italic;
     font-size: 25px;
-    color: $color-first;
+    border-style: groove;
     font-weight: 700;
-    background-color:$color-third;
-    border-style: dashed;
-    border-color: $color-first; 
+    border-radius: .25rem;
+    text-decoration: none;
+
+}
+%titleServicios {
+    margin-bottom: 15px;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: 4px;
+}
+%animationImgserv {
+    animation-name: focus-in;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation-fill-mode: both;
+}
+%styleBlock {
+    height: 580px;
+    display: flex;
+    margin-right: 40px;
+    margin-left: 90px;
+    padding-top: 30px;
 }

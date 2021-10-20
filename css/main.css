@@ -1,9 +1,41 @@
+.blockLeft div .buttonLeft a, #sectionServicios2 .blockRight div .buttonRight a {
+  padding: 3px 8px;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-size: 25px;
+  border-style: groove;
+  font-weight: 700;
+  border-radius: .25rem;
+  text-decoration: none; }
+
+.blockLeft div h2, #sectionServicios2 .blockRight div h2 {
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 4px; }
+
+#sectionServicios2 .blockRight img {
+  animation-name: focus-in;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-fill-mode: both; }
+
+.blockLeft, #sectionServicios2 .blockRight {
+  height: 580px;
+  display: flex;
+  margin-right: 40px;
+  margin-left: 90px;
+  padding-top: 30px; }
+
 /* Body */
 body {
   margin: 0px;
   padding: 0px;
   letter-spacing: 2px;
-  background-color: #000000;
+  background-color: #ffe5d4;
   color: #FF3888;
   font-family: "Kaisei Tokumin", serif;
   height: 100vh;
@@ -44,8 +76,8 @@ nav {
       align-items: center; }
       nav #navList ul li a {
         color: #FF3888;
-        text-shadow: 2px 2px #000000;
-        -webkit-text-stroke: 1.5px #000000;
+        text-shadow: 2px 2px #ffe5d4;
+        -webkit-text-stroke: 1.5px #ffe5d4;
         padding: 10px;
         letter-spacing: 1px;
         text-decoration: none;
@@ -80,90 +112,103 @@ nav {
   -webkit-text-stroke: 2px #8F1143; }
 
 /* Section Servicios */
-#sectionServicios .titleServicios {
-  font-size: 35px;
-  font-weight: 500;
-  text-transform: capitalize;
-  text-align: center;
-  -webkit-text-stroke: 1.5px #8F1143; }
+#sectionServicios1 {
+  height: 620px;
+  background-color: #8F1143;
+  margin-bottom: 40px; }
 
-#sectionServicios .textServicios {
-  padding: 0px 30px;
-  font-style: italic;
-  font-size: 25px;
-  color: #f8bbd0;
-  font-weight: 300;
-  text-align: left; }
-
-#sectionServicios .blockLeft {
-  margin: 0px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  #sectionServicios .blockLeft img {
+.blockLeft {
+  flex-flow: row nowrap; }
+  .blockLeft img {
+    height: 550px;
+    width: 380px;
     /*bordes*/
     border-radius: 100px 10px 100px 10px;
     -moz-border-radius: 100px 10px 100px 10px;
     -webkit-border-radius: 100px 10px 100px 10px;
     border: 2px solid #8F1143;
     /*sombras*/
-    -webkit-box-shadow: 10px 10px 15px 0px #c3185db3;
-    -moz-box-shadow: 10px 10px 15px 0px #c3185db3;
-    box-shadow: 10px 10px 15px 0px #c3185db3;
+    -webkit-box-shadow: 10px 10px 15px 0px #000000;
+    -moz-box-shadow: 10px 10px 15px 0px #000000;
+    box-shadow: 10px 10px 15px 0px #000000;
     /* animation */
     animation-name: focus-in;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     animation-fill-mode: both; }
+  .blockLeft div {
+    padding-left: 85px; }
+    .blockLeft div h2 {
+      color: #ffe5d4;
+      text-shadow: 4px 7px 3px black; }
+    .blockLeft div p {
+      padding-top: 40px;
+      font-family: "Kaisei Tokumin", serif;
+      font-size: 20px;
+      font-weight: 500;
+      font-style: italic;
+      line-height: 2;
+      color: #ffe5d4; }
+    .blockLeft div .buttonLeft {
+      transform: translate(20em, 2em); }
+      .blockLeft div .buttonLeft a {
+        background-color: #00000057;
+        color: #ffe5d4;
+        border-color: #ffe5d4; }
+        .blockLeft div .buttonLeft a:hover {
+          background-color: #000000;
+          border-color: #FF3888;
+          color: #FF3888; }
 
-#sectionServicios .buttonLeft a {
-  transform: translate(35em, -50px);
-  font-style: italic;
-  font-size: 25px;
-  color: #FF3888;
-  font-weight: 700;
-  background-color: #000000;
-  border-style: dashed;
-  border-color: #FF3888; }
-  #sectionServicios .buttonLeft a:hover {
-    background-color: #000000;
-    border-color: #f8bbd0;
-    color: #f8bbd0; }
+#sectionServicios2 {
+  height: 620px;
+  background-color: #ffe5d4;
+  margin-bottom: 40px; }
+  #sectionServicios2 .blockRight {
+    flex-flow: row-reverse nowrap; }
+    #sectionServicios2 .blockRight img {
+      height: 550px;
+      width: 380px;
+      /*bordes*/
+      border-radius: 10px 100px 10px 100px;
+      -moz-border-radius: 10px 100px 10px 100px;
+      -webkit-border-radius: 10px 100px 10px 100px;
+      border: 2px solid #ffe5d4;
+      /*sombras*/
+      -webkit-box-shadow: -10px 10px 15px 0px #000000;
+      -moz-box-shadow: -10px 10px 15px 0px #000000;
+      box-shadow: -10px 10px 15px 0px #000000;
+      transform: translateX(-15px);
+      /* animation */ }
+    #sectionServicios2 .blockRight div {
+      padding-right: 85px; }
+      #sectionServicios2 .blockRight div h2 {
+        color: black;
+        text-shadow: 5px 5px 3.5px #8F1143; }
+      #sectionServicios2 .blockRight div p {
+        padding-top: 40px;
+        font-family: "Kaisei Tokumin", serif;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 2;
+        color: black;
+        -webkit-text-stroke: 1px; }
+      #sectionServicios2 .blockRight div .buttonRight {
+        transform: translate(2em, 2em); }
+        #sectionServicios2 .blockRight div .buttonRight a {
+          color: #000000;
+          background-color: #ffe5d4;
+          border-color: #8F1143; }
+          #sectionServicios2 .blockRight div .buttonRight a:hover {
+            background-color: #000000;
+            border-color: #FF3888;
+            color: #FF3888; }
 
-#sectionServicios .blockRight {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between; }
-  #sectionServicios .blockRight img {
-    /*bordes*/
-    border-radius: 10px 100px 10px 100px;
-    -moz-border-radius: 10px 100px 10px 100px;
-    -webkit-border-radius: 10px 100px 10px 100px;
-    border: 2px solid #000000;
-    /*sombras*/
-    -webkit-box-shadow: -10px 10px 15px 0px rgba(195, 24, 93, 0.7);
-    -moz-box-shadow: -10px 10px 15px 0px rgba(195, 24, 93, 0.7);
-    box-shadow: -10px 10px 15px 0px rgba(195, 24, 93, 0.7);
-    transform: translateX(-15px);
-    /* animation */
-    animation-name: focus-in;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    animation-fill-mode: both; }
-
-#sectionServicios .buttonRight a {
-  transform: translate(2em, -20px);
-  font-style: italic;
-  font-size: 25px;
-  color: #FF3888;
-  font-weight: 700;
-  background-color: #000000;
-  border-style: dashed;
-  border-color: #FF3888; }
-  #sectionServicios .buttonRight a:hover {
-    background-color: #000000;
-    border-color: #f8bbd0;
-    color: #f8bbd0; }
+#sectionServicios3 {
+  height: 620px;
+  background-color: #582a78;
+  margin-bottom: 40px; }
 
 /* Keyframes image */
 @keyframes focus-in {
@@ -183,9 +228,9 @@ nav {
   justify-content: space-around;
   padding-bottom: 50px; }
   .sectionProductos .card {
-    background-color: #000000; }
+    background-color: #ffe5d4; }
     .sectionProductos .card a {
-      background-color: #000000;
+      background-color: #ffe5d4;
       color: #f8bbd0;
       border-color: #FF3888; }
     .sectionProductos .card a:hover {
@@ -207,11 +252,11 @@ nav {
   font-weight: 400; }
 
 #sectionContacto .btn-primary {
-  background-color: #000000;
+  background-color: #ffe5d4;
   border-color: #FF3888;
   color: #FF3888; }
   #sectionContacto .btn-primary :hover {
-    background-color: #000000;
+    background-color: #ffe5d4;
     border-color: #f8bbd0;
     color: #f8bbd0; }
 
