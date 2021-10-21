@@ -1,5 +1,5 @@
 /* Mobile */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px), (max-width:600px) {
     body {
         display: grid; 
         grid-template-columns: 1fr; 
@@ -23,77 +23,106 @@
     }
 
     /* Section Home */
-
-    #sectionHome {
-        text-align: left;
-        background-position: left;
-        max-width: 425px;
-        h1{
-            font-size: 70px;
-            text-align: left;
-        }
-        h2 {
-            font-size: 50px;
-            text-align: left;
-        }
-        .secondTitle {
-            font-size: 50px;
-            text-align: left;
-            text-transform: capitalize;
-        }
-    } 
+    
+        // h1{
+        //     font-size: 70px;
+        //     text-align: left;
+        // }
+        // h2 {
+        //     font-size: 50px;
+        //     text-align: left;
+        // }
+        // .secondTitle {
+        //     font-size: 50px;
+        //     text-align: left;
+        //     text-transform: capitalize;
+        // }
+    // } 
     
 
     /* Section Servicios */
-    
-    #sectionServicios {
-        .secondTitle {
-            font-size: 40px;
-            text-align: left;
-            text-transform: capitalize;
-        }
-        .titleServicios {
-            font-size: 25px;
-            text-align: left;
-        }
-        .textServicios {
-            padding: 0px;
-            font-size: 20px;
-            text-align:left;
-        }
-        .blockLeft {
-            margin: 0px 15px;
-            display: block;
-        }
-        .buttonLeft {
-            padding-bottom: 20px;
-            a{
-                margin: 0px 15px;
-                display: block;
-                transform: none;
-                
-            }
-            
-        }
-        .blockRight {
-            margin: 0px 15px;
-            display: block;
-        }
-        .buttonRight {
-            padding-bottom: 20px;
-            a{
-                margin: 0px 15px;
-                display: block;
-                transform: none;
-                
-            }
-        }
-        
+    .secondTitle {
+        font-size: 50px;
     }
+    #sectionServicios1 {
+        max-width: 425px;
+    }
+    .blockLeft {
+        flex-flow: column nowrap;
+        margin:0px;
+        img {
+            background-position: left;
+            height: 225px;
+            width: 190px;
+        }
+        div {
+            font-size: 30px;
+            padding: 15px;
+            h2 {
+                font-size: 30px;
+                text-align: left;
+            }
+            p {
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.7em;
+                font-size: 15px;
+                text-align: left;
+            }
+            .buttonLeft {
+                transform:none;
+                padding:0px;
+                a {
+                    font-size: 15px;
+                }
+
+            }
+        }
+    }
+    #sectionServicios2 {
+        max-width: 425px;
+        
+        .blockRight {
+            flex-flow: column nowrap;
+            margin:0px;
+            img {
+                background-position: left;
+                height: 225px;
+                width: 190px;
+            }
+            div {
+                font-size: 30px;
+                padding: 15px;
+                h2 {
+                    font-size: 35px;
+                    text-align: left;
+                }
+                p {
+                    padding: 0px;
+                    margin: 0px;
+                    line-height: 1.7em;
+                    font-size: 15px;
+                    text-align: left;
+                }
+                .buttonRight {
+                    transform:none;
+                    padding:0px;
+                    a {
+                        font-size: 15px;
+                    }
+    
+                }
+            }
+        }
+    }
+    #sectionServicios3 {
+        max-width: 425px;
+    }
+
     footer {
-        display:block;
+    display:block;
         li {
-            padding: 0px 15px
+        padding: 0px 15px
         }
     }
 
@@ -120,24 +149,83 @@
             padding: 0px;
         }
     }
-    #sectionServicios{
-        .buttonLeft {
-            padding-bottom: 20px;
-            a{
-                margin: 0px 15px;
-                display: block;
-                transform: none;
-                
-            }
+
+    /* Section Servicios */
+    
+    #sectionServicios1 {
+        max-width: 768px;
+        
+    }
+    .blockLeft {
+        flex-flow: column nowrap;
+        margin:0px;
+        img {
+            background-position: left;
+            height: 225px;
+            width: 190px;
         }
-        .buttonRight {
-            padding-bottom: 20px;
-            a{
-                margin: 0px 15px;
-                display: block;
-                transform: none;
-                
+        div {
+            font-size: 30px;
+            padding: 15px;
+            h2 {
+                font-size: 30px;
+                text-align: left;
+            }
+            p {
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.7em;
+                font-size: 15px;
+                text-align: left;
+            }
+            .buttonLeft {
+                transform:none;
+                padding:0px;
+                a {
+                    font-size: 15px;
+                }
+
             }
         }
     }
+    #sectionServicios2 {
+        max-width: 768px;
+        .blockRight {
+            flex-flow: column nowrap;
+            margin:0px;
+            img {
+                background-position: left;
+                height: 225px;
+                width: 190px;
+            }
+            div {
+                font-size: 30px;
+                padding: 15px;
+                h2 {
+                    font-size: 35px;
+                    text-align: left;
+                }
+                p {
+                    padding: 0px;
+                    margin: 0px;
+                    line-height: 1.7em;
+                    font-size: 15px;
+                    text-align: left;
+                }
+                .buttonRight {
+                    transform:none;
+                    padding:0px;
+                    a {
+                        font-size: 15px;
+                    }
+    
+                }
+            }
+        }
+    }
+    #sectionServicios3 {
+        max-width: 768px;
+    }
+    
+    
 }
