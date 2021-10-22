@@ -30,6 +30,16 @@
   margin-left: 90px;
   padding-top: 30px; }
 
+#sectionContacto2 .dataContacto1, #sectionContacto2 .dataContacto2, #sectionContacto2 .dataContacto3 {
+  padding: 10px 10px 15px 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 50px 50px 50px 50px;
+  border: 2px solid #000000;
+  text-shadow: 1.5px 1px 1px black;
+  font-size: 20px; }
+
 /* Body */
 body {
   margin: 0px;
@@ -292,9 +302,40 @@ nav {
   z-index: 10; }
 
 /* Section Contacto */
-#sectionContacto table {
-  padding: 10px;
-  font-weight: 400; }
+#sectionContacto1 {
+  margin-top: 3em; }
+  #sectionContacto1 div img {
+    width: 100%;
+    height: 100%; }
+  #sectionContacto1 div label {
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    -webkit-text-stroke: 1px;
+    text-transform: uppercase; }
+
+#sectionContacto2 {
+  margin-top: 7.5em; }
+  #sectionContacto2 .blockContacto1 {
+    text-align: center;
+    justify-content: space-evenly; }
+  #sectionContacto2 .blockContacto2 {
+    text-align: center;
+    margin-top: 3.5em;
+    justify-content: space-evenly; }
+  #sectionContacto2 .dataContacto1 {
+    background-color: #582a78;
+    color: #ffe5d4; }
+    #sectionContacto2 .dataContacto1 iframe {
+      align-self: center;
+      width: 85%;
+      height: 85%; }
+  #sectionContacto2 .dataContacto2 {
+    background-color: #8F1143;
+    color: #ffe5d4; }
+  #sectionContacto2 .dataContacto3 {
+    color: #000000;
+    -webkit-text-stroke: 1px;
+    text-shadow: none; }
 
 #sectionContacto .btn-primary {
   background-color: #ffe5d4;
@@ -399,12 +440,7 @@ footer {
     display: block; }
     footer li {
       padding: 0px 15px; }
-  /* Section contacto */
-  #sectionContacto table {
-    text-align: left; }
-  #sectionContacto iframe {
-    width: 275px;
-    height: 225px; } }
+  /* Section contacto */ }
 
 /* Tablet */
 @media screen and (max-width: 800px) {
@@ -467,4 +503,7 @@ footer {
           #sectionServicios2 .blockRight div .buttonRight a {
             font-size: 15px; }
   #sectionServicios3 {
-    max-width: 768px; } }
+    max-width: 768px; }
+  /* Section contacto */
+  #sectionContacto2 p {
+    font-size: 15px; } }

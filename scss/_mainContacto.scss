@@ -1,9 +1,53 @@
 /* Section Contacto */
-#sectionContacto {
-    table {
-        padding: 10px;
-        font-weight: 400;
+#sectionContacto1 {
+    margin-top: 3em;
+    div {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        label {
+            font-family: $font-primary;
+            color: $color-five;
+            -webkit-text-stroke: 1px;
+            text-transform: uppercase;
+        }
     }
+}
+#sectionContacto2 {
+    margin-top: 7.5em;
+    .blockContacto1 {
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .blockContacto2 {
+        text-align: center;
+        margin-top: 3.5em;
+        justify-content: space-evenly;
+    }
+    .dataContacto1 {
+        background-color: #582a78;
+        color: $color-one;
+        @extend %dataContacto;
+        iframe {
+            align-self: center;
+            width: 85%;
+            height: 85%;
+        }
+    }
+    .dataContacto2 {
+        background-color: #8F1143;
+        color: $color-one;
+        @extend %dataContacto;
+    }
+    .dataContacto3 {
+        @extend %dataContacto;
+        color: $color-five;
+        -webkit-text-stroke: 1px;
+        text-shadow: none;
+    }
+}
+#sectionContacto {
     .btn-primary {
         background-color: $color-third;
         border-color: $color-first;

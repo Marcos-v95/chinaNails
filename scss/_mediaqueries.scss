@@ -127,17 +127,14 @@
     }
 
     /* Section contacto */
+    
+        
+        // iframe {
+        //     width: 275px;
+        //     height: 225px;
+        // }
 
-    #sectionContacto{
-        table{
-            text-align: left;
-        }
-        iframe {
-            width: 275px;
-            height: 225px;
-        }
-
-    } 
+    
 }
 /* Tablet */
 @media screen and (max-width: 800px) {
@@ -227,5 +224,11 @@
         max-width: 768px;
     }
     
+    /* Section contacto */
+    #sectionContacto2 {
+        p {
+            font-size: 15px;
+        }
+    }
     
 }
