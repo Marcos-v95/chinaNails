@@ -1,18 +1,46 @@
-/* Section home */
-#sectionHome   {
-    background-image: url('../multimedia/images/fotohome2.jpg');
-    height: 670px;
-    background-size: cover;
-    font-weight: 500;
+// /* Section home */
+
+.showcase {
+    position: relative;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    text-transform: capitalize;
-    h1  {
-        font-size: 160px;
+    padding:0px 20px;
+    
+    .videocontainer {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 100%;
+        height: 750px;
+        overflow: hidden;
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: -35%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+        }
     }
-    h2 {
-        font-size: 80px;
+    .videocontainer::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .content {
+        z-index: 0;
     }
 }
+
 
 .secondTitle {
     margin-top: 25px;

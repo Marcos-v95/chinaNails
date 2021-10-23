@@ -37,7 +37,9 @@ body {
 // Estilos de header
 
 /* Navbar */
+
 nav {
+    
     background-image: url(../multimedia/images/header-nav.png);
     background-size: cover;
     display: flex;
@@ -46,6 +48,7 @@ nav {
     a {
         img {
             margin: 10px;
+            
         }
     }
     #navList {
