@@ -1,4 +1,6 @@
+
 /* Mobile */
+
 @media screen and (max-width: 460px), (max-width:600px) {
     body {
         display: grid; 
@@ -126,19 +128,19 @@
         }
     }
 
-    /* Section contacto */
-    
-        
-        // iframe {
-        //     width: 275px;
-        //     height: 225px;
-        // }
-
-    
+    // Galeria
+    .frame {
+        width: 380px;
+        height: 380px;
+      }
 }
+
 /* Tablet */
+
 @media screen and (max-width: 800px) {
+    
     /* Navbar */
+
     nav {
         #navList ul {
             display: block;
@@ -225,6 +227,7 @@
     }
     
     /* Section contacto */
+
     #sectionContacto2 {
         p {
             font-size: 15px;

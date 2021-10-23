@@ -1,4 +1,5 @@
 /* Section Contacto */
+
 #sectionContacto1 {
     margin-top: 3em;
     div {
@@ -11,6 +12,11 @@
             color: $color-five;
             -webkit-text-stroke: 1px;
             text-transform: uppercase;
+        }
+        button {
+            background-color: $color-one;
+            border-color: $color-five;
+            color: $color-five; 
         }
     }
 }
@@ -47,17 +53,4 @@
         text-shadow: none;
     }
 }
-#sectionContacto {
-    .btn-primary {
-        background-color: $color-third;
-        border-color: $color-first;
-        color: $color-first; 
-        :hover {
-            background-color: $color-third;
-            border-color: $color-second;
-            color: $color-second;
-        }    
-    }
-        
-    
-}
+/* Fin Section Contacto */

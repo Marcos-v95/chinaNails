@@ -1,3 +1,5 @@
+// Variables
+
 $font-primary:'Montserrat', sans-serif;
 $font-secondary:'Kaisei Tokumin', serif;
 $font-tertiary:'Dancing Script', cursive;
@@ -15,6 +17,7 @@ $color-six: #00000057;
 $color-seven:#582a78;
 
 // Mix 
+
 // Page servicios
 
 @mixin sectionServicios ($backgroundcolor) {
@@ -56,7 +59,8 @@ $color-seven:#582a78;
     padding-top: 30px;
 }
 
-// Mix pagina contacto
+// Page contacto
+
 %dataContacto{
     padding: 10px 10px 15px 10px;
     display: flex;
