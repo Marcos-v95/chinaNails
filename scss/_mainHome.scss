@@ -2,7 +2,7 @@
 
 .showcase {
     position: relative;
-    height: 750px;
+    height: 630px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +12,10 @@
     
     .videocontainer {
         position: absolute;
-        top: -25px;
+        top: -30px;
         left: 0;
         width: 100%;
-        height: 750px;
+        height: 670px;
         overflow: hidden;
         video {
             min-width: 100%;
@@ -34,10 +34,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.085);
     }
     .content {
         z-index: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: translate(-65%, -40%);
     }
 }
 
