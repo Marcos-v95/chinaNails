@@ -14,32 +14,28 @@
     }
 
     /* Navbar */
-
-    nav {
-        flex-direction: column;
-        #navList ul {
-            display: block;
-            text-align: left;
-            padding: 0px;
+    .navbar {
+        margin-bottom: 25px;
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    -webkit-text-stroke: 1.5px $color-five;
+                    padding: 6px;
+                    font-size: 25px;
+                }
+            }
         }
     }
+    .nav-link {
+        -webkit-text-stroke: 1.5px $color-five;
+        padding: 6px;
+        font-size: 25px;
+    }
+    
 
     /* Section Home */
     
-        // h1{
-        //     font-size: 70px;
-        //     text-align: left;
-        // }
-        // h2 {
-        //     font-size: 50px;
-        //     text-align: left;
-        // }
-        // .secondTitle {
-        //     font-size: 50px;
-        //     text-align: left;
-        //     text-transform: capitalize;
-        // }
-    // } 
+
     
 
     /* Section Servicios */
@@ -139,16 +135,6 @@
 
 @media screen and (max-width: 800px) {
     
-    /* Navbar */
-
-    nav {
-        #navList ul {
-            display: block;
-            text-align: left;
-            padding: 0px;
-        }
-    }
-
     /* Section Servicios */
     
     #sectionServicios1 {

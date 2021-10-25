@@ -37,31 +37,34 @@
 <body>
     <header>
         <!-- Inicio de navegador -->
-        <nav>
-            <div>
-                <a href="index.html"> 
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"> 
                     <img src="multimedia/images/imagen-logo.jpeg" alt="Logo">
                 </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="menuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item animate__animated animate__fadeIn">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeIn">
+                            <a href="pages/servicios.html" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeIn">
+                            <a href="pages/productos.html" class="nav-link">Productos </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeIn">
+                            <a href="pages/galeria.html" class="nav-link">Galeria </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeIn">
+                            <a href="pages/contacto.html" class="nav-link">Contacto </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="navList">
-                <ul>
-                    <li class="animate__animated animate__fadeIn">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="animate__animated animate__fadeIn">
-                        <a href="pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="animate__animated animate__fadeIn">
-                        <a href="pages/productos.html">Productos </a>
-                    </li>
-                    <li class="animate__animated animate__fadeIn">
-                        <a href="pages/galeria.html">Galeria </a>
-                    </li>
-                    <li class="animate__animated animate__fadeIn">
-                        <a href="pages/contacto.html">Contacto </a>
-                    </li>
-                </ul>
-            </div>  
         </nav>
         <!-- Fin de navegador -->
     </header>

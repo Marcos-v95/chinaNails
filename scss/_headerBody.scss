@@ -34,36 +34,32 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3.5rem;
 }
+
 // Estilos de header
 
 /* Navbar */
 
-nav {
+.navbar {
     
     background-image: url(../multimedia/images/header-nav.png);
     background-size: cover;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    a {
-        img {
-            margin: 10px;
-            
+    padding: 0px;
+    .container-fluid {
+        a {
+            img {
+                margin: 10px;
+                
+            }
         }
-    }
-    #navList {
-        display: flex;
-        flex-flow: row nowrap;
-        ul {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;  
-            li {
-                a {
+        button {
+            background-color: rgba(0, 0, 0, 0.308);
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
                     color: $color-first;
-                    text-shadow: 2px 2px $color-third;
-                    -webkit-text-stroke: 1.5px $color-third;
+                    text-shadow: 2px 2px $color-five;
+                    -webkit-text-stroke: 1.5px $color-five;
                     padding: 10px;
                     letter-spacing: 1px;
                     text-decoration: none;
@@ -76,9 +72,10 @@ nav {
                 :hover {
                         color:$color-second;
                     }
-            }
+                }
         }
-    }  
+    }
+    
 }
 
 

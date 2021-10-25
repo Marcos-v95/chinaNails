@@ -68,37 +68,30 @@ body {
   margin-bottom: 3.5rem; }
 
 /* Navbar */
-nav {
+.navbar {
   background-image: url(../multimedia/images/header-nav.png);
   background-size: cover;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around; }
-  nav a img {
+  padding: 0px; }
+  .navbar .container-fluid a img {
     margin: 10px; }
-  nav #navList {
-    display: flex;
-    flex-flow: row nowrap; }
-    nav #navList ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      nav #navList ul li a {
-        color: #FF3888;
-        text-shadow: 2px 2px #ffe5d4;
-        -webkit-text-stroke: 1.5px #ffe5d4;
-        padding: 10px;
-        letter-spacing: 1px;
-        text-decoration: none;
-        font-family: "Montserrat", sans-serif;
-        font-size: 31px;
-        font-weight: 600;
-        text-transform: uppercase;
-        transition: all 50ms; }
-      nav #navList ul li :hover {
-        color: #f8bbd0; }
+  .navbar .container-fluid button {
+    background-color: rgba(0, 0, 0, 0.308); }
+  .navbar .container-fluid .navbar-nav .nav-item .nav-link {
+    color: #FF3888;
+    text-shadow: 2px 2px #000000;
+    -webkit-text-stroke: 1.5px #000000;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 50ms; }
+  .navbar .container-fluid .navbar-nav .nav-item :hover {
+    color: #f8bbd0; }
 
+/* Section home */
 .showcase {
   position: relative;
   height: 630px;
@@ -465,12 +458,16 @@ footer {
     gap: 0px 0px;
     grid-template-areas: "header" "main" "footer"; }
   /* Navbar */
-  nav {
-    flex-direction: column; }
-    nav #navList ul {
-      display: block;
-      text-align: left;
-      padding: 0px; }
+  .navbar {
+    margin-bottom: 25px; }
+    .navbar .navbar-nav .nav-item .nav-link {
+      -webkit-text-stroke: 1.5px #000000;
+      padding: 6px;
+      font-size: 25px; }
+  .nav-link {
+    -webkit-text-stroke: 1.5px #000000;
+    padding: 6px;
+    font-size: 25px; }
   /* Section Home */
   /* Section Servicios */
   .secondTitle {
@@ -539,11 +536,6 @@ footer {
 
 /* Tablet */
 @media screen and (max-width: 800px) {
-  /* Navbar */
-  nav #navList ul {
-    display: block;
-    text-align: left;
-    padding: 0px; }
   /* Section Servicios */
   #sectionServicios1 {
     max-width: 768px; }
