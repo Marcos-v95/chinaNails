@@ -1,0 +1,15 @@
+/* Section Productos */
+.row {
+    padding: 10px 0px;
+}
+.aboutCont {
+    background: rgb(88,42,120);
+    background: linear-gradient(0deg, rgba(88,42,120,1) 12%, rgba(143,17,67,1) 100%);
+    color: $color-one;
+}
+.aboutText {
+        font-size: 20px;
+        text-shadow: 2px 2px 1px black;
+        font-weight: 700;
+        font-style: italic;
+    }

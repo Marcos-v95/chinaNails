@@ -25,7 +25,7 @@
         align-self: center;
         h2 {
             @extend %titleServicios;
-            color:$color-third;
+            color:$color-one;
             text-shadow: 4px 7px 3px black;
         }
         p {
@@ -35,7 +35,7 @@
             font-weight: 500;
             font-style: italic;
             line-height: 2;
-            color:$color-third;
+            color:$color-one;
         }
         .buttonLeft {
             transform: translate(20em, 2em);

@@ -1,6 +1,6 @@
 .blockLeft div .buttonLeft a, #sectionServicios2 .blockRight div .buttonRight a {
   padding: 3px 8px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: 25px;
   border-style: groove;
@@ -46,7 +46,7 @@ body {
   padding: 0px;
   letter-spacing: 2px;
   background-color: #ffe5d4;
-  color: #FF3888;
+  color: #000000;
   font-family: "Kaisei Tokumin", serif;
   height: 100vh;
   /* Grid Layout */
@@ -92,6 +92,14 @@ body {
     color: #f8bbd0; }
 
 /* Section home */
+.secondTitle {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  -webkit-text-stroke: 2px;
+  font-size: 80px;
+  text-align: center;
+  text-transform: capitalize; }
+
 .showcase {
   position: relative;
   height: 630px;
@@ -113,8 +121,8 @@ body {
       min-height: 100%;
       object-fit: cover;
       position: absolute;
-      top: -35%;
-      left: 75%;
+      top: 7%;
+      left: 50%;
       transform: translate(-50%, -50%); }
   .showcase .videocontainer::after {
     content: '';
@@ -129,16 +137,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transform: translate(-65%, -40%); }
+    transform: translate(-45%, -40%); }
 
-.secondTitle {
-  margin-top: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 70px;
-  text-align: center;
-  text-transform: capitalize;
-  -webkit-text-stroke: 2px #8F1143; }
+#titleHome1 {
+  font-family: "Dancing Script", cursive;
+  color: #ffe5d4;
+  margin-top: 12%;
+  font-size: 150px;
+  font-weight: 700;
+  text-shadow: 3px 5px 3px black; }
+
+#titleHome2 {
+  font-family: "Dancing Script", cursive;
+  color: #f8bbd0;
+  margin: 0px;
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 2px 3px 1px black; }
 
 /* Section Servicios */
 #sectionServicios1 {
@@ -246,22 +261,19 @@ body {
 
 /* Fin Section Servicios */
 /* Section Productos */
-.sectionProductos {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding-bottom: 50px; }
-  .sectionProductos .card {
-    background-color: #ffe5d4; }
-    .sectionProductos .card a {
-      background-color: #ffe5d4;
-      color: #f8bbd0;
-      border-color: #FF3888; }
-    .sectionProductos .card a:hover {
-      color: #ffffff;
-      background-color: #FF3888; }
-    .sectionProductos .card p {
-      color: #f8bbd0; }
+.row {
+  padding: 10px 0px; }
+
+.aboutCont {
+  background: #582a78;
+  background: linear-gradient(0deg, #582a78 12%, #8f1143 100%);
+  color: #ffe5d4; }
+
+.aboutText {
+  font-size: 20px;
+  text-shadow: 2px 2px 1px black;
+  font-weight: 700;
+  font-style: italic; }
 
 /* Section Galeria */
 .container {
@@ -437,11 +449,13 @@ footer {
   display: flex;
   flex-flow: row nowrap; }
   footer p {
-    color: #FF3888;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 1.5em; }
+    color: #000000;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    -webkit-text-stroke: 1px; }
   footer ul {
+    margin-top: 35px;
     list-style: none;
     text-align: right;
     display: flex;
@@ -468,7 +482,17 @@ footer {
     -webkit-text-stroke: 1.5px #000000;
     padding: 6px;
     font-size: 25px; }
+  .container-fluid {
+    max-width: 100%; }
   /* Section Home */
+  .content {
+    transform: translate(0%, -60%);
+    padding-left: 25px; }
+    .content #titleHome1 {
+      font-size: 80px; }
+    .content #titleHome2 {
+      font-size: 30px;
+      text-shadow: 1px 2px 1px black; }
   /* Section Servicios */
   .secondTitle {
     font-size: 50px; }
@@ -528,14 +552,28 @@ footer {
     max-width: 425px; }
   footer {
     display: block; }
+    footer p {
+      font-size: 1.5em; }
     footer li {
       padding: 0px 15px; }
   .frame {
     width: 380px;
-    height: 380px; } }
+    height: 380px; }
+  #sectionContacto1 {
+    margin-top: 3em; }
+    #sectionContacto1 div .imgContacto {
+      max-width: 400px;
+      padding-left: 0px; } }
 
 /* Tablet */
 @media screen and (max-width: 800px) {
+  .showcase .content {
+    transform: translate(-10%, -55%); }
+    .showcase .content #titleHome1 {
+      font-size: 80px; }
+    .showcase .content #titleHome2 {
+      font-size: 30px;
+      text-shadow: 1px 2px 1px black; }
   /* Section Servicios */
   #sectionServicios1 {
     max-width: 768px; }
@@ -592,5 +630,7 @@ footer {
   #sectionServicios3 {
     max-width: 768px; }
   /* Section contacto */
+  .blockContacto {
+    display: block; }
   #sectionContacto2 p {
     font-size: 15px; } }

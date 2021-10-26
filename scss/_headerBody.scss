@@ -4,8 +4,8 @@ body {
     margin: 0px;
     padding: 0px;
     letter-spacing: 2px;
-    background-color: $color-third;
-    color: $color-first;
+    background-color: $color-one;
+    color: $color-five;
     font-family: $font-secondary;
     height: 100vh;
 
@@ -57,7 +57,7 @@ body {
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    color: $color-first;
+                    color: $color-four;
                     text-shadow: 2px 2px $color-five;
                     -webkit-text-stroke: 1.5px $color-five;
                     padding: 10px;
@@ -70,7 +70,7 @@ body {
                     transition: all 50ms;
                 }
                 :hover {
-                        color:$color-second;
+                        color:$color-two;
                     }
                 }
         }

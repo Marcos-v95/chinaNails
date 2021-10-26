@@ -31,11 +31,23 @@
         padding: 6px;
         font-size: 25px;
     }
+    .container-fluid {
+        max-width: 100%;
+    }
     
 
     /* Section Home */
-    
-
+        .content {
+            transform: translate(0%, -60%);
+            padding-left: 25px;
+            #titleHome1 {
+                font-size: 80px;
+            }
+            #titleHome2 {
+                font-size: 30px;
+                text-shadow: 1px 2px 1px black;
+            }
+        }
     
 
     /* Section Servicios */
@@ -119,6 +131,9 @@
 
     footer {
     display:block;
+        p{
+            font-size: 1.5em;
+        }
         li {
         padding: 0px 15px
         }
@@ -128,13 +143,36 @@
     .frame {
         width: 380px;
         height: 380px;
-      }
+    }
+
+    #sectionContacto1 {
+        margin-top: 3em;
+        div {
+            .imgContacto {
+                max-width: 400px;
+                padding-left: 0px;
+            }
+        }
+    }
+
 }
 
 /* Tablet */
 
 @media screen and (max-width: 800px) {
     
+    .showcase {
+        .content {
+            transform: translate(-10%, -55%);
+            #titleHome1 {
+                font-size: 80px;
+            }
+            #titleHome2 {
+                font-size: 30px;
+                text-shadow: 1px 2px 1px black;
+            }
+        }
+    }
     /* Section Servicios */
     
     #sectionServicios1 {
@@ -213,7 +251,9 @@
     }
     
     /* Section contacto */
-
+    .blockContacto{
+        display: block;
+    }
     #sectionContacto2 {
         p {
             font-size: 15px;

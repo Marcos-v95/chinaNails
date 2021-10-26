@@ -3,10 +3,6 @@
 $font-primary:'Montserrat', sans-serif;
 $font-secondary:'Kaisei Tokumin', serif;
 $font-tertiary:'Dancing Script', cursive;
-$color-first:#FF3888;
-$color-second:#f8bbd0;
-$color-third:#ffe5d4;
-$color-shadow:#8F1143;
 
 $color-one: #ffe5d4;
 $color-two:#f8bbd0;
@@ -27,7 +23,7 @@ $color-seven:#582a78;
 }
 %blockButtons {
     padding: 3px 8px;
-    font-family: 'Montserrat';
+    font-family:$font-primary;
     font-style: italic;
     font-size: 25px;
     border-style: groove;
